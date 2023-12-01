@@ -1,0 +1,150 @@
+{
+    "code": "20000000",
+    "desc": null,
+    "result": [
+        {
+            "layoutId": "CLMBR.t7cUdXgMfX-g3Bx985116vCjTX655eB",
+            "layoutName": "banner_layout",
+            "productCode": "mms",
+            "sampleLayoutId": null,
+            "cardSpec": "openrichcard",
+            "buttonColor": null,
+            "formattedString": {
+                "RCSMessage": {
+                    "openrichcardMessage": {
+                        "scaleAllowed": true,
+                        "layout": {
+                            "orientation": "vertical",
+                            "widget": "LinearLayout",
+                            "children": [
+                                {
+                                    "orientation": "vertical",
+                                    "widget": "LinearLayout",
+                                    "width": "match",
+                                    "height": "4dp"
+                                },
+                                {
+                                    "orientation": "vertical",
+                                    "widget": "LinearLayout",
+                                    "children": [
+                                        {
+                                            "orientation": "horizontal",
+                                            "widget": "LinearLayout",
+                                            "visibility": "{{bannerVsblty}}",
+                                            "children": [
+                                                {
+                                                    "corner_radius": "4dp",
+                                                    "widget": "ImageView",
+                                                    "mediaUrl": "{{bannerMedia}}",
+                                                    "scaleType": "fitXY",
+                                                    "width": "match",
+                                                    "click": {
+                                                        "action": {
+                                                            "displayText": "배너이미지",
+                                                            "postback": {
+                                                                "data": "set_by_chatbot_open_url"
+                                                            },
+                                                            "urlAction": {
+                                                                "openUrl": {
+                                                                    "url": "{{bannerMediaUrl}}"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "height": "content"
+                                                }
+                                            ],
+                                            "width": "match",
+                                            "marginTop": "8dp",
+                                            "height": "content"
+                                        },
+                                        {
+                                            "orientation": "vertical",
+                                            "widget": "LinearLayout",
+                                            "visibility": "{{descVsblty}}",
+                                            "children": [
+                                                {
+                                                    "widget": "TextView",
+                                                    "textSize": "17dp",
+                                                    "visibility": "{{descTitleVsblty}}",
+                                                    "width": "match",
+                                                    "marginBottom": "1dp",
+                                                    "textStyle": "bold",
+                                                    "text": "{{title}}",
+                                                    "textColor": "#1e1e1e",
+                                                    "height": "content"
+                                                },
+                                                {
+                                                    "widget": "TextView",
+                                                    "textSize": "15dp",
+                                                    "width": "match",
+                                                    "textStyle": "normal",
+                                                    "text": "{{description}}",
+                                                    "textColor": "#1e1e1e",
+                                                    "viewAll": "150",
+                                                    "height": "content"
+                                                }
+                                            ],
+                                            "width": "match",
+                                            "marginTop": "8dp",
+                                            "height": "content"
+                                        }
+                                    ],
+                                    "paddingRight": "10dp",
+                                    "width": "match",
+                                    "paddingLeft": "10dp",
+                                    "height": "content"
+                                },
+                                {
+                                    "orientation": "vertical",
+                                    "widget": "LinearLayout",
+                                    "width": "match",
+                                    "height": "10dp"
+                                }
+                            ],
+                            "background": "#F2F2F2",
+                            "width": "match",
+                            "height": "content"
+                        },
+                        "version": "1.0.0",
+                        "zoomAllowed": true,
+                        "card": "open_rich_card"
+                    },
+                    "trafficType": "advertisement"
+                }
+            },
+            "registerId": "uplus",
+            "registerDate": "2023-11-22 10:28:10",
+            "updateDate": "2023-11-22 10:28:10",
+            "status": "ready",
+            "approvalResult": "승인완료",
+            "cardType": "formatBr",
+            "headerComposition": [],
+            "bodyComposition": [
+                {
+                    "index": 1,
+                    "id": "CP-Banner"
+                },
+                {
+                    "index": 2,
+                    "id": "CP-Description"
+                }
+            ],
+            "footerComposition": [],
+            "sender": {
+                "buttons": [
+                    {
+                        "suggestions": []
+                    }
+                ],
+                "body": {
+                    "bannerMediaUrl": "",
+                    "description": "",
+                    "bannerMedia": "",
+                    "title": ""
+                }
+            }
+        }
+    ],
+    "status": 200
+}
